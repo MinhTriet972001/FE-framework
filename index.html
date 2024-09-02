@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="accsett/style.css" />
+    <title>Document</title>
+  </head>
+  <body ng-app="myapp">
+    <div ng-include="'header.html'"></div>
+    <div ng-view></div>
+    <div ng-include="'footer.html'"></div>
+
+    <script>
+      var app = angular.module("myapp", ["ngRoute"]);
+      app.config(function ($routeProvider) {
+        $routeProvider
+          .when("/", { templateUrl: "trangchu.html", controller: "myCtrl" })
+          .when("/banggia", {
+            templateUrl: "banggia.html",
+            controller: "myCtrl",
+          })
+          .when("/gioithieu", {
+            templateUrl: "gioithieu.html",
+            controller: "myCtrl",
+          })
+          .when("/signup", { templateUrl: "signup.html", controller: "myCtrl" })
+          .when("/dangnhap", {
+            templateUrl: "dangnhap.html",
+            controller: "myCtrl",
+          })
+          .when("/dattour", {
+            templateUrl: "dattour.html",
+            controller: "myCtrl",
+          })
+          .when("/details", {
+            templateUrl: "details.html",
+            controller: "myCtrl",
+          })
+          .when("/tour", { templateUrl: "tour.html", controller: "myCtrl" })
+          .when("/buytour", {
+            templateUrl: "buytour.html",
+            controller: "myCtrl",
+          })
+          .when("/blog", { templateUrl: "blog.html", controller: "myCtrl" })
+          .when("/details/:id", {
+            templateUrl: "details.html",
+            controller: "myCtrl",
+          })
+          .when("/lienhe", { templateUrl: "lienhe.html", controller: "myCtrl" })
+          .otherwise({ templateUrl: "index.html", controller: "myCtrl" });
+      });
+
+      app.controller(
+        "myCtrl",
+        function ($scope, $http, $routeParams, $rootScope) {
+          // Khởi tạo các biến trong $scope
+          $scope.products = [];
+          $scope.slide = [];
+          $scope.tour = [];
+          $scope.dst = [];
+          $scope.blog = [];
+
+          // Hàm cập nhật giỏ hàng vào localStorage
+          function updateCartInLocalStorage() {
+            localStorage.setItem("cart", JSON.stringify($rootScope.cart));
+          }
+
+          // Hàm khởi tạo giỏ hàng từ localStorage
+          function initializeCart() {
+            $rootScope.cart = JSON.parse(localStorage.getItem("cart")) || [];
+          }
+
+          // Gửi các yêu cầu HTTP để lấy dữ liệu
+          $http
+            .get("http://localhost:3000/products")
+            .then(function (response) {
+              $scope.products = response.data;
+            })
+            .catch(function (error) {
+              console.error("Lỗi khi tải sản phẩm:", error);
+            });
+
+          $scope.submitForm = function () {
+            if ($scope.registrationForm.$valid) {
+              // Lấy dữ liệu từ form
+              var formData = {
+                name: $scope.name,
+                email: $scope.email,
+                password: $scope.password,
+                phone: $scope.phone,
+              };
+
+              $http.post("http://localhost:3000/user", formData).then(
+                function (response) {
+                  alert("Đăng Ký Thành công");
+                },
+                function (error) {
+                  alert("Đăng Ký Thất Bại");
+                }
+              );
+            } else {
+              alert("Chưa cập nhật đúng thông tin");
+            }
+          };
+
+          $scope.login = function () {
+            var formData = {
+              email: $scope.email,
+              password: $scope.password,
+            };
+
+            // Sử dụng encodeURIComponent để mã hóa email
+            $http
+              .get(
+                "http://localhost:3000/user?email=" +
+                  encodeURIComponent(formData.email)
+              )
+              .then(
+                function (response) {
+                  if (response.data.length > 0) {
+                    if (response.data[0].password === formData.password) {
+                      alert("Đăng Nhập Thành Công");
+                    } else {
+                      alert("Sai mật khẩu");
+                    }
+                  } else {
+                    alert("Email không tồn tại");
+                  }
+                },
+                function (error) {
+                  alert("Đăng Nhập Thất Bại");
+                }
+              );
+          };
+
+          $http
+            .get("http://localhost:3000/slide")
+            .then(function (response) {
+              $scope.slide = response.data;
+            })
+            .catch(function (error) {
+              console.error("Lỗi khi tải slide:", error);
+            });
+
+          $http
+            .get("http://localhost:3000/tour")
+            .then(function (response) {
+              $scope.tour = response.data;
+              $scope.tourdetails = $scope.tour.find(
+                (item) => item.id == $routeParams.id
+              );
+
+              // Khởi tạo giỏ hàng
+              initializeCart();
+
+              // Hàm thêm tour vào giỏ hàng
+              $scope.addToCart = function (tourdetails) {
+                var index = $rootScope.cart.findIndex(
+                  (item) => item.id == tourdetails.id
+                );
+                if (index === -1) {
+                  tourdetails.quantity = 1;
+                  $rootScope.cart.push(tourdetails);
+                } else {
+                  $rootScope.cart[index].quantity++;
+                }
+
+                // Cập nhật giỏ hàng vào localStorage
+                updateCartInLocalStorage();
+                console.log($rootScope.cart);
+              };
+
+              // Hàm xóa tour khỏi giỏ hàng
+              $scope.removeFromCart = function (tourdetails) {
+                var index = $rootScope.cart.findIndex(
+                  (item) => item.id === tourdetails.id
+                );
+                if (index !== -1) {
+                  $rootScope.cart.splice(index, 1);
+                  // Cập nhật giỏ hàng vào localStorage sau khi xóa
+                  updateCartInLocalStorage();
+                } else {
+                  console.log("Sản phẩm không tìm thấy trong giỏ hàng.");
+                }
+              };
+            })
+            .catch(function (error) {
+              console.error("Lỗi khi tải tour:", error);
+            });
+
+          $http
+            .get("http://localhost:3000/dst")
+            .then(function (response) {
+              $scope.dst = response.data;
+            })
+            .catch(function (error) {
+              console.error("Lỗi khi tải dst:", error);
+            });
+
+          $http
+            .get("http://localhost:3000/blog")
+            .then(function (response) {
+              $scope.blog = response.data;
+            })
+            .catch(function (error) {
+              console.error("Lỗi khi tải blog:", error);
+            });
+        }
+      );
+    </script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdQ1QRJsgGdIlAfpO2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

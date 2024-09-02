@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tour Bốn Phương</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="accsett/style.css" />
+    <!--icon bôtrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="breadcrumb">
+        <div class="margin-auto">
+          <ol class="inner">
+            <li>
+              <a href="index.html">Trang Chủ</a
+              ><span><i class="bi bi-chevron-compact-right"></i></span>
+            </li>
+            <li>
+              <span>Tour Trong Nước </span
+              ><i class="bi bi-chevron-compact-right"></i>
+            </li>
+            <li><span>Tòa Thánh Tây Ninh -Núi Bà Đen</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card" style="border: none">
+          <div class="card-body">
+            <h3 class="card-title" style="color: #005294">
+              {{tourdetails.tour}}
+            </h3>
+            <h6
+              class="card-subtitle mb-2 text-muted"
+              style="margin-top: 10px; font-size: 17px"
+            >
+              Giá tour gốc/khách:
+              <span style="color: #fb752e !important; font-size: 20px"
+                >{{tourdetails.price}}VND</span
+              >
+            </h6>
+            <button ng-click="addToCart()" class="btn-booking">ĐẶT NGAY</button>
+          </div>
+        </div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+          <li class="nav-item">
+            <a
+              href="#tab1Id"
+              class="nav-link active"
+              data-bs-toggle="tab"
+              aria-current="page"
+              >Chương Trình Tour</a
+            >
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Bảng Giá</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a href="#tab2Id" class="nav-link" data-bs-toggle="tab">Hình Ảnh</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+            <div class="container no-conds">
+              <div class="col-sm-6">
+                <img
+                  src="img/{{tourdetails.image}}"
+                  alt=""
+                  class="img-thumbnail"
+                  width="100%"
+                  height="680px"
+                />
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-header">{{tourdetails.tour}}</div>
+                  <div class="card-body">
+                    <h5 class="card-title">.Buổi Sáng</h5>
+                    <p class="card-text">
+                      {{tourdetails.des}}
+                      <span style="font-weight: bold"
+                        >tour Tòa thánh Tây Ninh Bà Đen 1 ngày</span
+                      >
+                      {{tourdetails.des2}}
+                      <span> {{tourdetails.des3}}</span>
+                    </p>
+                    <p
+                      class="card-text"
+                      style="
+                        line-height: 150%;
+                        text-align: justify;
+                        margin-left: 40px;
+                      "
+                    >
+                      » Thưởng ngoạn vườn hoa rực rỡ và đa dạng.
+                    </p>
+                    <p
+                      class="card-text"
+                      style="
+                        line-height: 150%;
+                        text-align: justify;
+                        margin-left: 40px;
+                      "
+                    >
+                      » Check-in tại <strong>cột mốc độ cao 968m</strong> - niềm
+                      tự hào của người dân Tây Ninh.
+                    </p>
+                    <p
+                      class="card-text"
+                      style="
+                        line-height: 150%;
+                        text-align: justify;
+                        margin-left: 40px;
+                      "
+                    >
+                      » Tìm hiểu văn hóa phật giáo tại
+                      <strong>không gian trưng bày nghệ thuật Phật Giáo</strong>
+                      - niềm tự hào của người dân Tây Ninh.
+                    </p>
+                    <h5 class="card-title">.Buổi Trưa</h5>
+                    <p class="card-text">
+                      Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày
+                      thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80
+                      món).
+                    </p>
+                    <h5 class="card-title">.Buổi Chiều</h5>
+                    <p class="card-text">
+                      Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao
+                      Đài tại <strong>Tòa thánh Tây Ninh</strong
+                      ><span
+                        >hay còn được gọi là Đền Thánh với quần thể kiến trúc
+                        thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và
+                        phương Tây .</span
+                      >
+                      <span
+                        >Tham quan <strong>chùa Gò Kén Tây Ninh</strong>, một
+                        trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở
+                        hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông
+                        Nam Bộ.</span
+                      >
+                    </p>
+                    <a href="#!/buytour">
+                      <button
+                        ng-click="addToCart(tourdetails)"
+                        class="btn btn-primary btn-lg"
+                      >
+                        Đặt ngay
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <h3 style="margin-top: 20px">Tour Liên Quan</h3>
+            <div class="container no-conds">
+              <div class="col-sm-4 no-sty" style="margin-left: 15px">
+                <div class="card">
+                  <img
+                    src="https://saigontourist.net/uploads/destination/TrongNuoc/Mientay/Ca%20mau/CA-mau-Dat-mui.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">{{tourdetails.tour}}</h3>
+                    <p class="card-text">ĐÀ NẴNG-MIỀN TÂY</p>
+                    <a href="#" class="btn btn-warning">ĐẶT TOUR</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 no-sty" style="margin-left: 15px">
+                <div class="card">
+                  <img
+                    src="https://saigontourist.net/uploads/destination/TrongNuoc/Mientay/Can%20tho/Cai-Rang-floating-market_633167327.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Du Lịch Cần Thơ - Châu Đốc - Hà Tiên
+                    </h3>
+                    <p class="card-text">TP.HỒ CHÍ MINH -MIỀN TÂY</p>
+                    <a href="#" class="btn btn-warning">ĐẶT TOUR</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 no-sty" style="margin-left: 15px">
+                <div class="card">
+                  <img
+                    src="https://saigontourist.net/uploads/destination/TrongNuoc/Mientay/floating-market-in-can-tho.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      TIỀN GIANG - CẦN THƠ - ĐỒNG THÁP - CHÂU ĐỐC
+                    </h3>
+                    <p class="card-text">ĐÀ NẴNG - MIỀN TÂY</p>
+                    <a href="#" class="btn btn-warning">ĐẶT TOUR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab2Id" role="tabpanel">
+            <h3 style="color: #005294">Hình ảnh Tour</h3>
+            <div class="container no-conds">
+              <div class="col-sm-7" style="padding-top: 30px">
+                <div
+                  id="carouselExampleControlsNoTouching"
+                  class="carousel slide"
+                  data-bs-touch="false"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://tourbonphuong.com/upload/product/400x0x1/z5566394642921-c80ebced8ecf5d0285f2566a4098c8a9-131.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                        height="500px"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-5 col-xs-6">
+                <div
+                  id="carouselExampleControlsNoTouching"
+                  class="carousel slide"
+                  data-bs-touch="false"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://tourbonphuong.com/upload/product/400x0x1/img-2949-9327.jpeg"
+                        class="d-block w-100"
+                        alt="..."
+                        height="165px"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="padding-top: 20px">
+                      <img
+                        src="https://tourbonphuong.com/upload/product/400x0x1/z4577689438388-1caacc8385f5810e18002407052592e2-2703.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+          <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+          <div class="tab-pane fade" id="tab5Id" role="tabpanel">
+            <div class="card">
+              <table class="table table-bordered" style="margin-bottom: 0">
+                <thead class="text-center">
+                  <tr>
+                    <th rowspan="2">STT</th>
+                    <th rowspan="2">Khách Sạn</th>
+                    <th rowspan="2">Giá Người Lớn</th>
+                  </tr>
+
+                  <tr>
+                    <th>Giá Trẻ Em</th>
+                    <th>Suất Ăn</th>
+                    <th>Hành Động</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <i class="bi bi-star-fill" style="color: #fbb040"></i>
+                    </td>
+                    <td class="text-end">1.490.000 VNĐ</td>
+                    <td class="text-end">1.20.000 VNĐ</td>
+                    <td class="text-end">Khách Việt Nam</td>
+                    <td class="text-end">
+                      <a
+                        type="button"
+                        class="btn"
+                        style="
+                          --bs-btn-padding-y: 0.25rem;
+                          --bs-btn-padding-x: 0.5rem;
+                          --bs-btn-font-size: 0.75rem;
+                          background-color: #fb752e;
+                          color: #fff;
+                        "
+                      >
+                        ĐẶt NGAY
+                      </a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <i class="bi bi-star-fill" style="color: #fbb040"></i>
+                      <i class="bi bi-star-fill" style="color: #fbb040"></i>
+                    </td>
+                    <td class="text-end">2.250.000 VNĐ</td>
+                    <td class="text-end">1.688.000 VNĐ</td>
+                    <td class="text-end">Khách Nước Ngoài</td>
+                    <td class="text-end">
+                      <a
+                        type="button"
+                        class="btn"
+                        style="
+                          --bs-btn-padding-y: 0.25rem;
+                          --bs-btn-padding-x: 0.5rem;
+                          --bs-btn-font-size: 0.75rem;
+                          background-color: #fb752e;
+                          color: #fff;
+                        "
+                      >
+                        ĐẶt NGAY
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr></tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </main>
+    <div class="container" style="padding-top: 30px"></div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      >
+    </script>
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+      var triggerEl = document.querySelector("#navId a");
+      bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+    </script>
+  </body>
+</html>

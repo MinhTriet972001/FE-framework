@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="accsett/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body ng-app="myapp">
+   
+    <main>
+      
+        <div class="breadcrumb">
+            <div class="margin-auto">
+              <ol class="inner">
+                <li><a href="index.html">Trang Chủ</a><span><i class="bi bi-chevron-compact-right"></i></span></li>
+                <li> <span>Bảng Giá </span></li>
+                  
+              </ol>
+            </div>
+            
+           </div>
+           <div class="container">
+            <div class="row">
+                <h1 style="color:#005294 ; text-align:center ;">BẢNG GIÁ</h1>
+
+                
+
+                  <table class="table_style table_list table_bg">
+		        	<thead>
+					    <tr>
+					        <th>STT</th>
+					        <th>Mã</th>
+					        <th width="25%" class="center">Lịch trình Tour</th>
+					        <th>Thời gian</th>
+					        <th width="20%">Lịch khởi hành</th>
+					        <th>Phương tiện</th>
+					        <th>Giá Tour</th>
+					        <th>Hành động</th>
+					    </tr>
+					</thead>
+					<tbody>
+												<tr>
+						    <td data-th="STT" class="center">1</td>
+						    <td data-th="Mã" class="center">XNMT 01.1</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-1-ngay-my-tho-ben-tre">TOUR MIỀN TÂY 1 NGÀY</a></td>
+						    <td data-th="Thời gian" class="center">1 Ngày</td>
+						    <td data-th="Lịch khởi hành" class="center">Hằng ngày</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>						        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">450.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-1-ngay-my-tho-ben-tre">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">2</td>
+						    <td data-th="Mã" class="center">XNMT 02</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-2-ngay-1-dem-my-tho-ben-tre-can-tho">TOUR MIỀN TÂY 2 NGÀY 1 ĐÊM</a></td>
+						    <td data-th="Thời gian" class="center">2 Ngày 1 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center">Hàng Ngày |  Theo yêu cầu</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">1.550.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-2-ngay-1-dem-my-tho-ben-tre-can-tho">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">3</td>
+						    <td data-th="Mã" class="center">XNCM 03</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="ca-mau-dat-mui-can-tho">TOUR 3 NGÀY 2 ĐÊM: CẦN THƠ - ĐẤT MŨI CÀ MAU</a></td>
+						    <td data-th="Thời gian" class="center">3 Ngày 2 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center">Thứ 3 - Thứ 6 | Theo yêu cầu</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">2.890.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="ca-mau-dat-mui-can-tho">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">4</td>
+						    <td data-th="Mã" class="center">XNMT 03</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-3-ngay-2-dem-my-tho-ben-tre-can-tho-chau-doc">TOUR MIỀN TÂY 3 NGÀY 2 ĐÊM</a></td>
+						    <td data-th="Thời gian" class="center">3 Ngày 2 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center"> Hằng ngày</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">3.080.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-3-ngay-2-dem-my-tho-ben-tre-can-tho-chau-doc">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">5</td>
+						    <td data-th="Mã" class="center">PT0302</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-3-ngay-2-dem-phan-thiet">TOUR 3 NGÀY 2 ĐÊM: PHAN THIẾT - JEEP TOUR - BÀU SEN</a></td>
+						    <td data-th="Thời gian" class="center">3 Ngày 2 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center">Thứ 6 hàng tuần</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">3.086.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-3-ngay-2-dem-phan-thiet">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">6</td>
+						    <td data-th="Mã" class="center">XNMT 04.1</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-4-ngay-3-dem-sa-dec-can-tho-ca-mau-bac-lieu-soc-trang">TOUR 4 NGÀY 3 ĐÊM: SA ĐÉC - CẦN THƠ - CÀ MAU - BẠC LIÊU - SÓC TRĂNG</a></td>
+						    <td data-th="Thời gian" class="center">4 Ngày 3 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center">Theo yêu cầu</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">4.180.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-4-ngay-3-dem-sa-dec-can-tho-ca-mau-bac-lieu-soc-trang">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">7</td>
+						    <td data-th="Mã" class="center">XNMT 04</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="4-ngay-3-dem-tien-giang-ben-tre-can-tho-soc-trang-bac-lieu-ca-mau">TOUR 4 NGÀY 3 ĐÊM: TIỀN GIANG - BẾN TRE - CẦN THƠ - SÓC TRĂNG - BẠC LIÊU - CÀ MAU</a></td>
+						    <td data-th="Thời gian" class="center">4 Ngày 3 Đêm</td>
+						    <td data-th="Lịch khởi hành" class="center">Thứ 2 & Thứ 5 | Theo yêu cầu</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>						        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">4.180.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="4-ngay-3-dem-tien-giang-ben-tre-can-tho-soc-trang-bac-lieu-ca-mau">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">8</td>
+						    <td data-th="Mã" class="center">XNCĐ 01</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-1-ngay-toa-thanh-tay-ninh"> TÒA THÁNH TÂY NINH - NÚI BÀ ĐEN 1 NGÀY</a></td>
+						    <td data-th="Thời gian" class="center">1 Ngày</td>
+						    <td data-th="Lịch khởi hành" class="center"> Hằng ngày</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>						        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">1.490.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-1-ngay-toa-thanh-tay-ninh">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">9</td>
+						    <td data-th="Mã" class="center">CC- MK1</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="tour-cu-chi-my-tho-1-ngay">CỦ CHI - MỸ THO  1 NGÀY</a></td>
+						    <td data-th="Thời gian" class="center">1 NGÀY</td>
+						    <td data-th="Lịch khởi hành" class="center">Hàng ngày</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">1.450.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="tour-cu-chi-my-tho-1-ngay">Xem tour</a></td>
+						</tr>
+												<tr>
+						    <td data-th="STT" class="center">10</td>
+						    <td data-th="Mã" class="center">XNSGAT 01</td>
+						    <td data-th="Lịch trình Tour" class="left tit"><a target="_blank" href="an-toi-tren-du-thuyen-dong-duong-indochine-cruise">ĂN TỐI TRÊN DU THUYỀN ĐÔNG DƯƠNG INDOCHINE CRUISE</a></td>
+						    <td data-th="Thời gian" class="center">1 Ngày</td>
+						    <td data-th="Lịch khởi hành" class="center">Hằng ngày</td>
+						    <td data-th="Phương tiện" class="center">
+                                						        	<span id="phuontien">
+																		<i class="bi bi-car-front"></i>					        	</span>
+                                						    </td>
+						    <td data-th="Giá Tour(VNĐ)" class="center pri">
+						    	<span id="price-bg">595.000VNĐ</span>
+						    </td>
+						    <td data-th="Hành động" class="center"><a target="_blank" class="btn-tour btn-tour__pro" href="an-toi-tren-du-thuyen-dong-duong-indochine-cruise">Xem tour</a></td>
+						</tr>
+							
+							
+											</tbody>		
+		        </table>
+            </div>
+           </div>
+          <main>
+         
+          
+        </main>
+        </div>
+      </div>
+    </main>
+   
+    <!-- Bootstrap JavaScript Libraries -->
+
+	<script>
+		var app = angular.module("myapp", ["ngRoute"]);
+	  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

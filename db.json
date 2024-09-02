@@ -1,0 +1,240 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Tour tham quan Đà Lạt trong ngày: Khám phá những điểm tham quan",
+      "price": 100000,
+      "hot": 1,
+      "image": "1.jpg",
+      "category": "Tour Đà Lạt"
+    },
+    {
+      "id": "2",
+      "name": "Tour tham quan Tây Bắc[Cần Thơ-Hà Nội-Sapa-Fansipan]",
+      "price": 200,
+      "image": "2.jpg",
+      "hot": 1,
+      "category": "Tour Hà Nội"
+    },
+    {
+      "id": "3",
+      "name": "Tour tham quan Tây Bắc[Bà Na Hills Chùa Linh Ứng Biển Mỹ Khê]",
+      "price": 300,
+      "image": "5.jpg",
+      "hot": 1,
+      "category": "Tour Đà Nẵng"
+    },
+    {
+      "id": "4",
+      "name": "Tour tham quan Nha Trang[Làng Yến Mai Sinh Dốc Lết I Resort]",
+      "price": 400,
+      "hot": 1,
+      "image": "4.jpg",
+      "category": "Tour Nha Trang"
+    },
+    {
+      "id": "5",
+      "name": "Product 5",
+      "price": 500,
+      "image": "5.jpeg",
+      "category": "miền Bắc"
+    },
+    {
+      "id": "6",
+      "name": "Product 6",
+      "price": 600,
+      "image": "6.jpeg",
+      "hot": 1,
+      "category": "miền Bắc"
+    },
+    {
+      "id": "7",
+      "name": "Product 7",
+      "price": 700,
+      "image": "7.jpeg",
+      "category": "miền Bắc"
+    },
+    {
+      "id": "8",
+      "name": "Product 8",
+      "price": 800,
+      "image": "8.jpeg",
+      "category": "miền Bắc"
+    },
+    {
+      "id": "10",
+      "name": "Slider2"
+    }
+  ],
+  "slide": [
+    {
+      "id": "1",
+      "name": "Product 8",
+      "price": 800,
+      "image": "slide2.jpg",
+      "category": "miền Bắc"
+    },
+    {
+      "id": "2",
+      "name": "Product 8",
+      "price": 800,
+      "image": "slide3.jpg",
+      "category": "miền Bắc"
+    },
+    {
+      "id": "3",
+      "name": "Product 8",
+      "price": 800,
+      "image": "slide4.png",
+      "category": "miền Bắc"
+    }
+  ],
+  "user": [
+    {
+      "username": "teo",
+      "password": "123",
+      "id": "e4e1"
+    },
+    {
+      "username": "ti",
+      "password": "123",
+      "id": "ec5d"
+    },
+    {
+      "id": "7f1d",
+      "name": "phuongduy111",
+      "email": "duy090504@gmail.com",
+      "password": "1",
+      "phone": "0703391355"
+    },
+
+    {
+      "id": "a851",
+      "name": "MinhTriet",
+      "email": "trietdoan152@gmail.com",
+      "password": "123",
+      "phone": "123456789"
+    },
+    {
+      "id": "891d",
+      "name": "safdf",
+      "email": "trietdnmps36868@fpt.edu.vn",
+      "password": "123",
+      "phone": "0703391364"
+    }
+  ],
+  "tour": [
+    {
+      "id": "1",
+      "tour": "TÒA THÁNH TÂY NINH - NÚI BÀ ĐEN",
+      "price": "1490000",
+      "image": "tourtrongnuoc1.jpg",
+      "des": " Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    },
+    {
+      "id": "2",
+      "tour": "THÀNH PHỐ HỒ CHÍ MINH -ĐỊA ĐẠO CỦ CHI 1 NGÀY",
+      "price": "1800000",
+      "image": "tourtrongnuoc2.jpg",
+      "des": "Buổi Sáng Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    },
+    {
+      "id": "3",
+      "tour": "ĂN TỐI TRÊN DU THUYỀN ĐÔNG DƯƠNG",
+      "price": "2000000",
+      "image": "tourtrongnuoc5.jpg",
+      "des": "Buổi Sáng Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    },
+    {
+      "id": "4",
+      "tour": "Du Lịch Nghỉ Dưỡng Tại Bảo Lộc - Doi Dep Tea Resort",
+      "price": "1900000",
+      "image": "tourtrongnuoc6.jpg",
+      "des": "Buổi Sáng Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    },
+    {
+      "id": "5",
+      "tour": " Du Lịch Buôn Ma Thuột - Buôn Đôn - Pleiku - KomTum - Măng Đen",
+      "price": "1300000",
+      "image": "tourtrongnuoc7.jpg",
+      "des": "Buổi Sáng Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    },
+    {
+      "id": "6",
+      "tour": " Du Lịch Buôn Ma Thuột - Buôn Đôn - Pleiku - KomTum - Măng Đen",
+      "price": "1600000",
+      "image": "tourtrongnuoc7.jpg",
+      "des": "Buổi Sáng Xe và hướng dẫn viên sẽ đón Quý khách tại điểm hẹn 05k00 sáng và bắt đầu hàng trinh tour Tòa thánh Tây Ninh Bà Đen 1 ngàyTrên đường đến Tây Ninh, đoàn sẽ dừng chân thưởng thức đặc sản bánh canh Trảng Bàng tại quán điểm tâm sáng ở địa phương.Đến Tây Ninh, Quý khách sẽ chinh phục đỉnh Vân Sơn của núi Bà Đen bằng tuyến hệ thống cáp treo Sun World Ba Den Mountain. Tại đỉnh Vân Sơn, Quý khách có thể tham gia các hoạt động như:",
+      "des2": "Buổi Trưa  Quý khách nghỉ ngơi dùng cơm trưa tại nhà hàng cho ngày thường ( T7&CN ăn buffet trên đỉnh Vân Sơn - với hơn 80 món).",
+      "des3": "Buổi Chiều  Tiếp tục hành trình, đoàn tham quan và tìm hiểu về đạo Cao Đài tại Tòa thánh Tây Ninhhay còn được gọi là Đền Thánh với quần thể kiến trúc thể hiện sự hài hoà giữa phong cách kiến trúc Á Đông và phương Tây . Tham quan chùa Gò Kén Tây Ninh, một trong những ngôi chùa cổ có tuổi đời hơn trăm năm, sở hữu bức tượng Phật Quan Thế Âm lớn bậc nhất miền Đông Nam Bộ."
+    }
+  ],
+  "dst": [
+    {
+      "id": "1",
+      "tour": "Miền Tây Trong Ngày",
+      "many": "3 Tour",
+      "image": "ds1.jpg"
+    },
+    {
+      "id": "2",
+      "tour": "Sài Gòn",
+      "many": "6 Tour",
+      "image": "ds2.jpg"
+    },
+    {
+      "id": "3",
+      "tour": "Phan Thiết",
+      "many": "6 Tour",
+      "image": "ds3.jpg"
+    },
+    {
+      "id": "4",
+      "tour": "Đà Lạt",
+      "many": "2 Tour",
+      "image": "ds4.jpg"
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "head": "Cẩm Nang Du Lịch",
+      "desc": "Những ai đã trải nghiệm mùa nước nổi ở miền Tây thì hẳn không quên đi cảnh sắc thiên nhiên.Đây là thời điểm mong chờ nhất",
+      "image": "blog1.jpg"
+    },
+    {
+      "id": "2",
+      "head": "Đặc Sản Miền Tây",
+      "desc": "Canh chua điên điển cá linh.Ăn chỉ một mình thì chẳng ngon.Cá Linh là những sản vật đặc trưng mà thiên nhiên đã tặng",
+      "image": "blog2.jpg"
+    },
+    {
+      "id": "3",
+      "head": "Lò Hủ Tiếu Truyền Thống Ở Cần Thơ-Nét Đẹp Văn Học Truyền Thống",
+      "desc": "Cần Thơ, 'thủ phủ miền Tây sông nước', không chỉ nổi tiếng với những khu chợ nổi nhộn nhịp, những vườn trái cây trĩu quả mà còn níu chân du khách bởi hương vị đặc trưng của các món ăn miệt vườn.",
+      "image": "blog3.jpg"
+    },
+    {
+      "id": "4",
+      "head": "Vườn Trái Cây Vàm Xáng Cần Thơ",
+      "desc": "từ lâu đã trở thành điểm đến quen thuộc cho du khách yêu thích khám phá miền Tây sông nước. Đây không chỉ là nơi bạn có thể thưởng thức những loại trái cây đặc sản, mà còn là một điểm đến lý tưởng để trải nghiệm các món ăn dân dã",
+      "image": "blog4.jpg"
+    },
+    {
+      "id": "5",
+      "head": "Top 10 Vườn Trái Cây Cần Thơ Nổi Tiếng Nặng Trĩu",
+      "desc": "Cần Thơ,'thủ phủ miền Tây' nổi tiếng với những miệt vườn xanh mát trĩu quả quanh năm,luôn chào đón du khách mới tham quan và trải nghiệm.Dưới đây là bài viết.",
+      "image": "blog5.jpg"
+    }
+  ]
+}

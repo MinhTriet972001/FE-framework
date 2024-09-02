@@ -1,0 +1,238 @@
+.nav-item:hover {
+  background-color: rgb(202 201 201 / 40%);
+}
+.nav-link:hover {
+  color: #e23464;
+}
+.nav-link.active {
+  color: #e23464 !important;
+  background-color: rgb(202 201 201 / 40%) !important;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.card-img-overlay {
+  position: absolute;
+  /* top: 0; */
+  top: 65%;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  padding: var(--bs-card-img-overlay-padding);
+  border-radius: var(--bs-card-inner-border-radius);
+}
+a {
+  text-decoration: none;
+}
+h5 {
+  font-weight: bold;
+}
+footer {
+  background-color: #daefff;
+}
+a.nav-link.p-0.text-muted {
+}
+.mb-3 {
+  margin-left: 20px;
+}
+
+.social-network li {
+  display: inline-block;
+  background-color: #4867aa;
+  padding: 5px 10px;
+  border-radius: 3px;
+  width: 87px;
+}
+.social-network li a {
+  color: #ffffff;
+  display: block;
+}
+.social-network li.twitter {
+  background-color: #33ccff;
+}
+.social-network li.gmail {
+  background-color: #db4437;
+}
+
+.breadcrumb {
+  background-color: #f9f9f9;
+  margin: 0px;
+  padding: 10px 0px;
+  position: relative;
+  color: #000;
+  font-size: 17px;
+}
+
+.breadcrumb .inner li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.margin-auto {
+  max-width: 1220px;
+  margin-left: 10%;
+}
+
+.btn-booking {
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 17px;
+  background: #fb752e;
+  color: #fff;
+  font-family: var(--font-r2);
+  text-transform: uppercase;
+  font-size: 19px;
+  padding: 9px 17px;
+}
+.container .no-conds {
+  display: flex;
+}
+table th {
+  background-color: #005294;
+}
+.col-sm-4 .no-sty {
+}
+
+.btn-tour__pro {
+  font-size: 13px;
+  padding: 7px 15px;
+  background: #fb752e;
+}
+
+.btn-tour {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 13px;
+
+  cursor: pointer;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.table_bg {
+  border-radius: 13px;
+  overflow: hidden;
+}
+.table_style {
+  border-collapse: collapse;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table_style thead tr:first-child th {
+  border-bottom: 1px solid #005294;
+  box-sizing: border-box;
+}
+
+.table_style th {
+  background-color: #005294;
+  border-right: 1px solid #005294;
+  color: #fff;
+  font-size: 14.5px;
+  font-family: var(--font-r2);
+  padding: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.table_style .center {
+  text-align: center;
+}
+
+.table_style td {
+  border-right: 1px solid transparent;
+  border-top: 1px solid #005294;
+  border-bottom: 1px solid #005294;
+  padding: 6px;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-family: var(--font-r1);
+}
+.custom-select {
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffa500;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  padding-top: 20px;
+}
+
+i {
+  font-size: 15px;
+}
+@media only screen and (max-width: 740px) {
+  .container .no-conds {
+    display: block;
+  }
+  .margin-auto {
+    max-width: 1220px;
+    margin-left: 0;
+  }
+  .table_list tr td:first-child {
+    background: #005294 !important;
+    color: #fff;
+  }
+  .table_list td:first-child {
+    padding-top: 0.5em;
+  }
+  .table_list td {
+    display: flex !important;
+  }
+  .table_list td {
+    display: block;
+    text-align: left !important;
+    border-bottom: 0;
+    border-right: 0;
+    background: none !important;
+  }
+
+  .table_list td:before {
+    content: attr(data-th) ":";
+    font-family: sans-serif;
+    width: 11rem;
+    display: inline-block;
+  }
+  .table_list td:before {
+    width: 120px !important;
+    min-width: 120px !important;
+  }
+
+  .table_list td:before {
+    content: attr(data-th) ":";
+    font-family: sans-serif;
+    width: 11rem;
+    display: inline-block;
+  }
+  thead {
+    display: none;
+  }
+}
